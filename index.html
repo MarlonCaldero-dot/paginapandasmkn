@@ -7,50 +7,78 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
+            font-size: 4em;  /* Hacer el texto grande */
         }
-        section {
+        .container {
+            display: flex;
+            width: 100%;
+            height: calc(100vh - 120px); /* Resto de la pantalla después del encabezado */
+        }
+        .content {
+            flex: 1;
+            padding: 40px;
+            background-color: #f4f4f4;
+            font-size: 1.5em;  /* Hacer el texto más grande */
+            line-height: 1.6;
+        }
+        .sidebar {
+            width: 40%; /* Aumentar el tamaño de la columna de la imagen */
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             padding: 20px;
-            margin: 10px 0;
         }
         h2 {
             color: #4CAF50;
+            font-size: 2em;  /* Aumentar tamaño del título */
+        }
+        .sidebar img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
-   
     <header>
         <h1>PANDA</h1>
     </header>
 
-   
-    <section>
-        <h2>Descripción General</h2>
-        <p>El panda gigante es un mamífero originario de China, conocido por su distintivo pelaje blanco y negro. Es un símbolo de conservación debido a su estatus en peligro de extinción.</p>
-    </section>
+    <div class="container">
+        <div class="content">
+            <section>
+                <h2>Descripción General</h2>
+                <p>El panda gigante es un mamífero originario de China, conocido por su distintivo pelaje blanco y negro. Es un símbolo de conservación debido a su estatus en peligro de extinción.</p>
+            </section>
 
-    
-    <section>
-        <h2>Características Físicas</h2>
-        <p>Los pandas tienen un pelaje blanco con manchas negras alrededor de los ojos, las orejas, las patas y los hombros. Su cuerpo es robusto, y poseen una gran fuerza, aunque su alimentación es principalmente herbívora.</p>
-    </section>
+            <section>
+                <h2>Características Físicas</h2>
+                <p>Los pandas tienen un pelaje blanco con manchas negras alrededor de los ojos, las orejas, las patas y los hombros. Su cuerpo es robusto, y poseen una gran fuerza, aunque su alimentación es principalmente herbívora.</p>
+            </section>
 
-    
-    <section>
-        <h2>Alimentación</h2>
-        <p>La dieta de un panda se compone principalmente de bambú, aunque también pueden comer otros tipos de vegetación, frutas y, ocasionalmente, pequeños mamíferos o aves.</p>
-    </section>
+            <section>
+                <h2>Alimentación</h2>
+                <p>La dieta de un panda se compone principalmente de bambú, aunque también pueden comer otros tipos de vegetación, frutas y, ocasionalmente, pequeños mamíferos o aves.</p>
+            </section>
 
-    
-    <section>
-        <h2>Hábitat</h2>
-        <p>El panda gigante vive en las montañas de China, en bosques de bambú donde pueden encontrar su principal fuente de alimento. Prefieren lugares fríos y húmedos, alejados de áreas de alta actividad humana.</p>
-    </section>
+            <section>
+                <h2>Hábitat</h2>
+                <p>El panda gigante vive en las montañas de China, en bosques de bambú donde pueden encontrar su principal fuente de alimento. Prefieren lugares fríos y húmedos, alejados de áreas de alta actividad humana.</p>
+            </section>
+        </div>
+
+        <div class="sidebar">
+            <img src="https://placekitten.com/600/600" alt="Imagen de Panda">
+        </div>
+    </div>
 </body>
 </html>
